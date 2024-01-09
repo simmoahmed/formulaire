@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Coupe d'Afrique</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <h1>Formulaire Coupe d'Afrique 2024</h1>
+</head>
+<body>
+
+    <img src="caf.png" alt="Logo CAF" style="width: 100px; height: auto;margin-bottom: 20px;">
+
+    <form  id="cupForm" action="merci.html" method="get" onsubmit="return validateForm()">
+        <label for="favoriteTeam">Nom *</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="favoriteTeam">Prénom *</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="genre">Genre *</label>
+        <select id="genre" name="genre" required>
+            <option value="" disabled selected>Choisissez votre genre</option>
+            <option value="m">Masculin</option>
+            <option value="f">Féminin</option>
+        </select>
+
+        <label for="favoriteTeam">Email *</label>
+        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+        <label for="favoriteTeam">Équipe préférée *</label>
+        <select id="favoriteTeam" name="favoriteTeam" required>
+            <option value="" disabled selected>Choisissez une équipe</option>
+            <option value="morocco">Maroc</option>
+            <option value="algeria">Algérie</option>
+            <option value="cameroon">Cameroun</option>
+            <option value="egypt">Égypte</option>
+            <option value="ghana">Ghana</option>
+            <option value="nigeria">Nigéria</option>
+            <option value="senegal">Sénégal</option>
+            <option value="tunisia">Tunisie</option>
+            <option value="ivoryCoast">Côte d'Ivoire</option>
+            <option value="southAfrica">Afrique du Sud</option>
+            <option value="mali">Mali</option>
+            <option value="guinea">Guinée</option>
+        </select>
+
+        <label for="watchingExperience">Expérience de visionnage:</label>
+        <textarea id="watchingExperience" name="watchingExperience" rows="4"></textarea>
+
+        <label for="predictions">Prédictions de résultats: *</label>
+        <input type="text" id="predictions" name="predictions" required>
+
+        <label for="memorableMoments">Souvenirs mémorables:</label>
+        <textarea id="memorableMoments" name="memorableMoments" rows="4"></textarea>
+
+        <label for="improvementSuggestions">Suggestions d'amélioration:</label>
+        <textarea id="improvementSuggestions" name="improvementSuggestions" rows="4"></textarea>
+
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Coupe d'Afrique</p>
+    </footer>
+    
+</body>
+
+</html>
